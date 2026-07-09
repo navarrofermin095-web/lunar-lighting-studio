@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lunar Lighting Studio — Roblox Studio Recruitment</title>
+  <meta name="description" content="Lunar Lighting Studio is recruiting Roblox developers, artists, and creators. Build high-quality, front-page experiences with deep mechanics." />
+  <meta property="og:title" content="Lunar Lighting Studio — We're Recruiting" />
+  <meta property="og:description" content="Push the boundaries of Roblox Studio within an organized, dedicated team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Lunar Lighting Studio home">
+        <span class="brand-mark">🌙</span>
+        <span class="brand-name">Lunar Lighting <span>Studio</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#roles">Open Roles</a>
+        <a href="#compensation">Compensation</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#apply" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">🚀 We're recruiting</span>
+          <h1>Build <span class="grad">front-page</span> Roblox experiences with&nbsp;deep mechanics.</h1>
+          <p class="lede">Hi, I'm <strong>OG_LEO</strong>, owner of Lunar Lighting Studio. If you're ready to push the boundaries of Roblox Studio within an organized, dedicated team — this is for you.</p>
+          <div class="hero-cta">
+            <a href="#apply" class="btn btn-primary">Apply to the team</a>
+            <a href="#roles" class="btn btn-ghost">View open roles</a>
+          </div>
+          <div class="hero-stats" id="heroStats"><!-- populated by JS --></div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="moon">
+            <span class="crater c1"></span>
+            <span class="crater c2"></span>
+            <span class="crater c3"></span>
+          </div>
+          <div class="orbit"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Who we are</span>
+          <h2>An organized, dedicated team pushing Roblox Studio further.</h2>
+          <p class="section-sub">We build high-quality, front-page experiences with deep mechanics. If you like to vibe and build together, you'll fit right in.</p>
+        </div>
+        <div class="cards-3">
+          <article class="feature">
+            <div class="feature-icon">⚙️</div>
+            <h3>Strong, clean workflows</h3>
+            <p>Strong skills, optimization knowledge, and clean workflows that scale with the team.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">📡</div>
+            <h3>Reliable communication</h3>
+            <p>Dependable communication and the ability to meet loose, realistic deadlines.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">🤝</div>
+            <h3>Collaborative mindset</h3>
+            <p>Ready to vibe and build together — we grow as a studio, not as strangers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ROLES ============ -->
+    <section id="roles" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Open roles</span>
+          <h2>Find your seat on the team.</h2>
+          <p class="section-sub">Every position is listed below. Full roles are still open for the waitlist — talent never goes to waste.</p>
+        </div>
+        <div class="roles-filter" id="rolesFilter">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="open">Open</button>
+          <button class="chip" data-filter="full">Full / Waitlist</button>
+        </div>
+        <div class="roles-grid" id="rolesGrid"><!-- populated by JS --></div>
+      </div>
+    </section>
+
+    <!-- ============ COMPENSATION ============ -->
+    <section id="compensation" class="section">
+      <div class="container">
+        <div class="comp-card">
+          <div class="comp-copy">
+            <span class="kicker">Compensation</span>
+            <h2>A revenue-share passion project — with a real path to payouts.</h2>
+            <p>Payouts are distributed from the studio treasury based entirely on your grind, activity, and project impact. Standard payouts (PayPal) are introduced as we scale up.</p>
+            <ul class="comp-list">
+              <li><span>💎</span> Rev-share from the studio treasury</li>
+              <li><span>📈</span> Rewards scale with your impact</li>
+              <li><span>💸</span> PayPal payouts as we grow</li>
+            </ul>
+            <p class="comp-note">We're upfront: this starts unpaid. We're building something worth owning a piece of.</p>
+          </div>
+          <div class="comp-visual">
+            <div class="treasury">
+              <div class="coin">💠</div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+              <span class="treasury-label">Studio treasury → contributors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPLY / FORM ============ -->
+    <section id="apply" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Application</span>
+          <h2>Apply to Lunar Lighting Studio</h2>
+          <p class="section-sub">A short business application. Answer honestly — quality over quantity always wins here.</p>
+        </div>
+
+        <div class="form-card">
+          <ol class="stepper" id="stepper">
+            <li class="active" data-step="1"><span>1</span> Your details</li>
+            <li data-step="2"><span>2</span> Role questions</li>
+            <li data-step="3"><span>3</span> Verification</li>
+            <li data-step="4"><span>4</span> Review</li>
+          </ol>
+
+          <form id="applicationForm" novalidate>
+            <!-- STEP 1 : GENERAL -->
+            <div class="step active" data-step="1">
+              <div class="grid-2">
+                <div class="field">
+                  <label for="fullName">Full name <em>*</em></label>
+                  <input type="text" id="fullName" name="fullName" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="email">Contact email <em>*</em></label>
+                  <input type="email" id="email" name="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="discord">Discord username <em>*</em></label>
+                  <input type="text" id="discord" name="discord" placeholder="username" required />
+                </div>
+                <div class="field">
+                  <label for="roblox">Roblox username / profile link <em>*</em></label>
+                  <input type="text" id="roblox" name="roblox" placeholder="username or roblox.com/users/..." required />
+                </div>
+                <div class="field">
+                  <label for="ageRange">Age range <em>*</em></label>
+                  <select id="ageRange" name="ageRange" required></select>
+                </div>
+                <div class="field">
+                  <label for="country">Country <em>*</em></label>
+                  <input type="text" id="country" name="country" autocomplete="country-name" required />
+                </div>
+                <div class="field">
+                  <label for="timezone">Timezone <em>*</em></label>
+                  <input type="text" id="timezone" name="timezone" placeholder="e.g. GMT+1, EST" required />
+                </div>
+                <div class="field">
+                  <label for="availability">Weekly availability <em>*</em></label>
+                  <select id="availability" name="availability" required>
+                    <option value="">Select…</option>
+                    <option>Under 5 hrs/week</option>
+                    <option>5–10 hrs/week</option>
+                    <option>10–20 hrs/week</option>
+                    <option>20–30 hrs/week</option>
+                    <option>30+ hrs/week</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="experience">Years of experience <em>*</em></label>
+                  <select id="experience" name="experience" required>
+                    <option value="">Select…</option>
+                    <option>Less than 1 year</option>
+                    <option>1–2 years</option>
+                    <option>2–4 years</option>
+                    <option>4+ years</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="role">Role you're applying for <em>*</em></label>
+                  <select id="role" name="role" required></select>
+                </div>
+                <div class="field span-2">
+                  <label for="portfolio">Portfolio / reel link</label>
+                  <input type="url" id="portfolio" name="portfolio" placeholder="https://" />
+                </div>
+                <div class="field span-2">
+                  <label for="motivation">Why do you want to join Lunar Lighting Studio? <em>*</em></label>
+                  <textarea id="motivation" name="motivation" rows="4" required></textarea>
+                </div>
+                <div class="field span-2">
+                  <label for="referral">How did you hear about us?</label>
+                  <select id="referral" name="referral">
+                    <option value="">Select…</option>
+                    <option>Discord</option>
+                    <option>A friend</option>
+                    <option>Twitter / X</option>
+                    <option>YouTube / TikTok</option>
+                    <option>Roblox community</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field span-2 checkbox">
+                  <label><input type="checkbox" id="revShareConsent" name="revShareConsent" required />
+                  I understand this role starts as a revenue-share (unpaid to start) passion project. <em>*</em></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 2 : ROLE-SPECIFIC -->
+            <div class="step" data-step="2">
+              <div class="role-banner" id="roleBanner"></div>
+              <div id="roleQuestions"><!-- populated by JS --></div>
+            </div>
+
+            <!-- STEP 3 : VERIFICATION -->
+            <div class="step" data-step="3">
+              <div class="verify-intro">
+                <h3>Identity verification 🔒</h3>
+                <p>To keep the team trusted and safe, we verify applicants. Your documents are handled through a <strong>secure verification flow</strong> — they are never posted publicly or emailed, and are used only to confirm your identity.</p>
+              </div>
+
+              <!-- Guardian consent (shown for minors) -->
+              <div id="guardianBlock" class="guardian hidden">
+                <h4>Parental / guardian consent required</h4>
+                <p class="hint">You selected an age under 18. A parent or guardian must consent before you can apply.</p>
+                <div class="grid-2">
+                  <div class="field">
+                    <label for="guardianName">Guardian full name <em>*</em></label>
+                    <input type="text" id="guardianName" name="guardianName" />
+                  </div>
+                  <div class="field">
+                    <label for="guardianEmail">Guardian email <em>*</em></label>
+                    <input type="email" id="guardianEmail" name="guardianEmail" />
+                  </div>
+                </div>
+                <div class="field checkbox">
+                  <label><input type="checkbox" id="guardianConsent" name="guardianConsent" />
+                  My parent/guardian has read this and consents to my application and identity verification. <em>*</em></label>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="docType">Document type <em>*</em></label>
+                <select id="docType" name="docType" required></select>
+                <p class="hint" id="marksheetHint" style="display:none">Applicants under 28 may submit an exam marksheet as an accepted document.</p>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <label>Document image (front) <em>*</em></label>
+                  <label class="dropzone" for="docFront">
+                    <span class="dz-icon">🖼️</span>
+                    <span class="dz-text">Click to upload or drag an image / PDF</span>
+                    <span class="dz-hint">JPG, PNG or PDF · max 8 MB</span>
+                    <input type="file" id="docFront" name="docFront" accept="image/*,.pdf" hidden />
+                  </label>
+                  <div class="file-preview" id="docFrontPreview"></div>
+                </div>
+                <div class="field">
+                  <label>Selfie holding your document <span class="opt">(optional)</span></label>
+                  <label class="dropzone" for="docSelfie">
+                    <span class="dz-icon">🤳</span>
+                    <span class="dz-text">Click to upload or drag an image</span>
+                    <span class="dz-hint">JPG or PNG · max 8 MB</span>
+                    <input type="file" id="docSelfie" name="docSelfie" accept="image/*" hidden />
+                  </label>
+                  <div class="file-preview" id="docSelfiePreview"></div>
+                </div>
+              </div>
+
+              <div class="field checkbox">
+                <label><input type="checkbox" id="privacyConsent" name="privacyConsent" required />
+                I consent to my documents being processed for identity verification, and I've read the
+                <a href="#" id="openPrivacy">Privacy Policy</a>. <em>*</em></label>
+              </div>
+            </div>
+
+            <!-- STEP 4 : REVIEW -->
+            <div class="step" data-step="4">
+              <h3>Review your application</h3>
+              <p class="hint">Check everything looks right, then submit. An AI-assisted review kicks off immediately.</p>
+              <div class="review" id="reviewPanel"></div>
+            </div>
+          </form>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn-ghost" id="prevBtn" style="visibility:hidden">Back</button>
+            <div class="form-nav-right">
+              <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+              <button type="button" class="btn btn-primary" id="submitBtn" style="display:none">Submit application</button>
+            </div>
+          </div>
+
+          <!-- SUCCESS -->
+          <div class="success-panel hidden" id="successPanel">
+            <div class="success-badge">✅</div>
+            <h3>Application received!</h3>
+            <p>Thanks — your application to <strong id="successRole"></strong> is in. Our AI-assisted review will evaluate it and the team will reach out on Discord.</p>
+            <p class="ref">Reference: <code id="successRef"></code></p>
+            <div class="email-fallback hidden" id="emailFallback"></div>
+            <button type="button" class="btn btn-ghost" id="resetBtn">Submit another application</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">How it works</span>
+          <h2>What happens after you apply</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-step"><span class="tl-num">1</span><h4>Submit</h4><p>You send your application and verify your identity securely.</p></div>
+          <div class="tl-step"><span class="tl-num">2</span><h4>AI-assisted review</h4><p>Each application is scored against role-specific criteria to shortlist fairly and fast.</p></div>
+          <div class="tl-step"><span class="tl-num">3</span><h4>Team review</h4><p>OG_LEO and leads review shortlisted candidates and portfolios.</p></div>
+          <div class="tl-step"><span class="tl-num">4</span><h4>Welcome aboard</h4><p>We reach out on Discord to onboard you into the studio.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section">
+      <div class="container narrow">
+        <div class="section-head">
+          <span class="kicker">FAQ</span>
+          <h2>Questions, answered</h2>
+        </div>
+        <div class="faq" id="faq">
+          <details><summary>Is this a paid position?</summary><p>It starts as a revenue-share passion project. Payouts come from the studio treasury based on your activity and impact, and standard PayPal payouts are introduced as we scale.</p></details>
+          <details><summary>Why do you ask for identity verification?</summary><p>To keep the team trusted and safe. Documents are handled through a secure verification flow, are never posted publicly or emailed, and are used only to confirm identity. See our Privacy Policy.</p></details>
+          <details><summary>I'm under 18 — can I still apply?</summary><p>Yes, with parental or guardian consent. You'll be asked to provide guardian details during verification.</p></details>
+          <details><summary>A role shows as full. Can I still apply?</summary><p>Absolutely — apply to join the waitlist. Spots open up, and we keep strong applicants on file.</p></details>
+          <details><summary>How long until I hear back?</summary><p>Applications get an AI-assisted first review immediately, and the team follows up on Discord for shortlisted candidates.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">🌙</span>
+        <div>
+          <strong>Lunar Lighting Studio</strong>
+          <p>High-quality, front-page Roblox experiences with deep mechanics.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#roles">Open Roles</a>
+        <a href="#apply">Apply</a>
+        <a href="#" id="footerDiscord">Discord</a>
+        <a href="#" id="footerPrivacy">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Lunar Lighting Studio. Built for creators, by creators.</span>
+    </div>
+  </footer>
+
+  <!-- ============ PRIVACY MODAL ============ -->
+  <div class="modal hidden" id="privacyModal">
+    <div class="modal-card">
+      <button class="modal-close" id="privacyClose" aria-label="Close">✕</button>
+      <h3>Privacy Policy — Identity Verification</h3>
+      <div class="modal-body">
+        <p><strong>What we collect:</strong> your application answers, portfolio links, and — for verification — a government or exam document image (and optional selfie).</p>
+        <p><strong>How documents are handled:</strong> verification documents are processed only to confirm your identity through a secure verification flow. They are <strong>not</strong> posted publicly, shared with third parties for marketing, or sent by email.</p>
+        <p><strong>Minors:</strong> applicants under 18 require verifiable parental/guardian consent, collected during the application.</p>
+        <p><strong>Retention:</strong> verification documents are kept only as long as needed to complete verification, then deleted.</p>
+        <p><strong>Your rights:</strong> you can request access to or deletion of your data at any time by contacting the studio.</p>
+        <p class="hint">This is a template policy. Before going live, replace it with a policy reviewed for your jurisdiction (GDPR / DPDP / etc.).</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
