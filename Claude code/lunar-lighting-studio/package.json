@@ -1,7 +1,0 @@
-{
-  "name": "lunar-lighting-studio",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "description": "Lunar Lighting Studio recruitment site — static frontend + /api/apply serverless function (Gemini evaluation + Resend email)."
-}
